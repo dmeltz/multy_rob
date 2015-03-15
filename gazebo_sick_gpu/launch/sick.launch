@@ -1,0 +1,10 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+
+<!-- setting gazebo path for scenario platform and sensors models -->
+   <env name="GAZEBO_MODEL_PATH" value="$(find gazebo_sick_gpu)/models"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find gazebo_sick_gpu)/worlds/sick.world"/>
+  </include>
+</launch>

@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <world name="default">
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        <scene>
+            <sky>
+                <time>10</time>
+                <clouds>
+                    <speed>5</speed>
+                    <direction>1.14</direction>
+                    <humidity>0.3</humidity>
+                </clouds>
+            </sky>
+        </scene>
+        <gui>
+            <camera name="camera_pose">
+                <pose>80 -60 60 0 0.5 2</pose>
+            </camera>
+        </gui>
+        <include>
+            <uri>model://terrain100x100</uri>
+        </include>
+        <include>
+            <uri>model://srvss_bobcat</uri>
+            <pose>50 10 1.6451 0 0 1.57</pose>
+            <name>srvss_bobcat</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>43.7051 58.5463 1.00598 0.0999848 0.00299029 1.11296</pose>
+            <scale>1 1 1</scale>
+            <name>object0</name>
+        </include>
+        <include>
+            <uri>model://tree1</uri>
+            <pose>57.2516 47.104 0.700068 0.00223735 -0.0322271 1.24156</pose>
+            <scale>1 1 1</scale>
+            <name>object1</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>79.3589 38.7231 0.929085 0.0438797 -0.0577525 -1.7969</pose>
+            <scale>1 1 1</scale>
+            <name>object2</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>40.0654 23.0619 1.23569 0.0803927 -0.0631193 -0.601525</pose>
+            <scale>1 1 1</scale>
+            <name>object3</name>
+        </include>
+        <include>
+            <uri>model://tree1</uri>
+            <pose>23.3998 72.3062 0.919874 -0.059791 -0.00422325 0.518218</pose>
+            <scale>1 1 1</scale>
+            <name>object4</name>
+        </include>
+        <include>
+            <uri>model://tree1</uri>
+            <pose>59.3994 28.2144 1.15347 -0.0651963 0.00043626 -0.0817033</pose>
+            <scale>1 1 1</scale>
+            <name>obstacle_on_path0</name>
+        </include>
+
+    </world>
+</sdf>
